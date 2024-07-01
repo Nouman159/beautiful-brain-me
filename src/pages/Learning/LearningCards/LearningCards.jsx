@@ -61,19 +61,19 @@ const LearningCards = () => {
     };
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-[#FFF1DF]">
+        <div className="flex flex-col items-center justify-center min-h-screen">
             <div className="container text-center">
                 <p className="text-2xl mb-2 max-sm:px-4">ARTICLES I HAVE WRITTEN</p>
                 <h2 className="text-[48px] font-bold mb-4 max-sm:ml-2 text-center">Read my articles on Substack</h2>
-                <a href='https://calendly.com/jose_miguel_santos/advisor-discovery-call-beautiful-brain' target='_blank'>
+                {/* <a href='https://calendly.com/jose_miguel_santos/advisor-discovery-call-beautiful-brain' target='_blank'>
                     <button className="bg-[#E59F41] hover:text-black text-white font-bold py-4 px-6 rounded-full transition duration-300 mb-4">SCHEDULE A CALL</button>
-                </a>
+                </a> */}
             </div>
             {/* </div> */}
             <div className="relative w-full max-w-8xl flex justify-center items-center">
                 <button
                     onClick={prevCard}
-                    className="absolute left-0 px-5 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white p-4 rounded-full z-10 ml-28 max-sm:ml-5"
+                    className="absolute left-0 px-5 top-1/2 transform -translate-y-1/2 bg-[#24B260] text-white p-4 rounded-full z-10 ml-28 max-sm:ml-5"
                 >
                     &lt;
                 </button>
@@ -100,7 +100,7 @@ const LearningCards = () => {
 
                 <button
                     onClick={nextCard}
-                    className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-500 px-5 text-white p-4 rounded-full z-10 mr-28 max-sm:mr-5"
+                    className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-[#24B260] px-5 text-white p-4 rounded-full z-10 mr-28 max-sm:mr-5"
                 >
                     &gt;
                 </button>

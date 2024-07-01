@@ -48,7 +48,7 @@ const BuildingCard = () => {
             <div className="relative w-full max-w-8xl flex justify-center items-center">
                 <button
                     onClick={prevCard}
-                    className="absolute left-0 px-5 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white p-4 rounded-full z-10 ml-28 max-sm:ml-5"
+                    className="absolute left-0 px-5 top-1/2 transform -translate-y-1/2 bg-[#E59F41] text-white p-4 rounded-full z-10 ml-28 max-sm:ml-5"
                 >
                     &lt;
                 </button>
@@ -76,7 +76,7 @@ const BuildingCard = () => {
 
                 <button
                     onClick={nextCard}
-                    className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-500 px-5 text-white p-4 rounded-full z-10 mr-28 max-sm:mr-5"
+                    className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-[#E59F41] px-5 text-white p-4 rounded-full z-10 mr-28 max-sm:mr-5"
                 >
                     &gt;
                 </button>

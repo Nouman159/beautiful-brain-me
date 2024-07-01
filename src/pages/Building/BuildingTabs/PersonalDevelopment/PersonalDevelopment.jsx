@@ -18,9 +18,8 @@ const PersonalDevelopment = () => {
     return (
         <div className="main p-5 w-11/12 mx-auto">
             <div>
-                <p className="text-lg md:text-xl lg:text-2xl">These are ideas to increase the speed to achieve your best self. They either are trying to improve how mindful on how you use your time and to stay on track on the important things you need to do to get to know your self better.</p>
+                <p className="text-lg md:text-xl lg:text-xl text-gray-800">These are ideas to increase the speed to achieve your best self. They either are trying to improve how mindful on how you use your time and to stay on track on the important things you need to do to get to know your self better.</p>
             </div>
-            <hr className="my-4" />
 
             {[
                 {
@@ -36,20 +35,20 @@ const PersonalDevelopment = () => {
                     description: "Using keyboard shortcuts can make you much more productive, but it takes time to remember. So I want to build a tool for Mac with a shortcut key that shows an overlay of the keyboard shortcuts for the app you are using (and allows you to display the ones you care about).",
                 },
             ].map((idea, index) => (
-                <div key={index} className="set-text mb-5">
-                    <div className="text-container">
-                        <h1 className="text-lg md:text-xl lg:text-2xl font-bold">{idea.title}</h1>
-                        <p className="mt-2 text-sm md:text-base lg:text-lg">{idea.description}</p>
+                <div key={index} className='set-text mb-5'>
+                    <hr className='my-4' />
+                    <div className='text-container'>
+                        <h1 className='text-3xl md:text-xl lg:text-3xl py-4 font-bold'>{idea.title}</h1>
+                        <p className='mt-2 text-xl text-gray-700 md:text-base lg:text-lg'>{idea.description}</p>
                     </div>
-                    <div className="flex items-center">
+                    <span className='flex items-center w-[80px] py-6 rounded-full pl-4 bg-[#E59F41] mt-4'>
                         <FontAwesomeIcon
                             icon={faThumbsUp}
                             onClick={() => toggleLike(index)}
-                            className={`cursor-pointer size-8 ${liked[index] ? 'text-blue-500' : 'text-gray-400'} mr-2`}
+                            className={`cursor-pointer size-8 ${liked[index] ? 'text-gray-500' : 'text-white'} mr-2`}
                         />
-                        <span>{likes[index]}</span>
-                    </div>
-                    <hr className="my-4" />
+                        <span className='mt-1'>{likes[index]}</span>
+                    </span>
                 </div>
             ))}
         </div>

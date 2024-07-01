@@ -22,18 +22,18 @@ const AdvisingTabs = () => {
                 </div>
             </div>
 
-            <div className="bg-[#FFF2F1] flex flex-col md:flex-row md:justify-between md:items-center mx-4 md:mx-24 mt-5 rounded-full p-3 max-sm:rounded-sm max-sm:ml-10">
-                <div className={`text-center flex-1 mb-3 md:mb-0 ${tab === 'FirstPrinciples' ? 'bg-[#DB504C] rounded-full' : ''}`}>
+            <div className="bg-[#FFF2F1] flex flex-col md:flex-row md:justify-between md:items-center mx-4 md:mx-24 mt-5 rounded-full max-sm:rounded-[40px] max-sm:ml-10">
+                <div className={`text-center flex-1 py-2 px-3 mb-3 md:mb-0 ${tab === 'FirstPrinciples' ? 'bg-[#DB504C] rounded-full' : ''}`}>
                     <button onClick={() => setTab("FirstPrinciples")} className="border-none outline-none cursor-pointer bg-transparent block w-full py-3 px-5 hover:bg-aqua">First Principles Problem Solver</button>
                 </div>
-                <div className={`text-center flex-1 ${tab === 'DetailsOriented' ? 'bg-[#DB504C] rounded-full' : ''}`}>
+                <div className={`text-center flex-1 py-2 px-3 ${tab === 'DetailsOriented' ? 'bg-[#DB504C] rounded-full' : ''}`}>
                     <button onClick={() => setTab("DetailsOriented")} className="border-none outline-none cursor-pointer bg-transparent block w-full py-3 px-5 hover:bg-aqua">Detail-oriented Fast Learner
                     </button>
                 </div>
-                <div className={`text-center flex-1 ${tab === 'Impact' ? 'bg-[#DB504C] rounded-full' : ''}`}>
+                <div className={`text-center flex-1 py-2 px-3 ${tab === 'Impact' ? 'bg-[#DB504C] rounded-full' : ''}`}>
                     <button onClick={() => setTab("Impact")} className="border-none outline-none cursor-pointer bg-transparent block w-full py-3 px-5 hover:bg-aqua">Impact Obsessed</button>
                 </div>
-                <div className={`text-center flex-1 mb-3 md:mb-0 ${tab === 'Empowering' ? 'bg-[#DB504C] rounded-full' : ''}`}>
+                <div className={`text-center flex-1 py-2 px-3 mb-3 md:mb-0 ${tab === 'Empowering' ? 'bg-[#DB504C] rounded-full' : ''}`}>
                     <button onClick={() => setTab("Empowering")} className="border-none outline-none cursor-pointer bg-transparent block w-full py-3 px-5 hover:bg-aqua">Empowering Others</button>
                 </div>
             </div>

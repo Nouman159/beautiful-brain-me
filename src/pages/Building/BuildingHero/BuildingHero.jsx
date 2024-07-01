@@ -2,12 +2,12 @@ import React from 'react';
 
 const BuildingHero = () => {
     return (
-        <div className="flex flex-col md:flex-row justify-between items-start p-4 md:p-0 md:mt-16">
+        <div className="flex flex-col md:flex-row justify-between items-start p-4 py-24">
             <div className="flex-1">
-                <h1 className="text-6xl font-bold mb-2 md:mb-4 md:ml-8" style={{ fontFamily: 'Recoleta, sans-serif' }}>
-                    Wanna build <br /> for good?
+                <h1 className="text-[96px] leading-[104px] max-sm:text-6xl font-bold mb-2 md:mb-4 md:ml-8" style={{ fontFamily: 'Recoleta, sans-serif' }}>
+                    Wanna build for good?
                 </h1>
-                <p className="text-lg leading-relaxed md:ml-8 md:mt-8">
+                <p className="text-xl text-gray-800 leading-relaxed md:ml-8 md:mt-8">
                     I started building when I learned how to code at 14, which <br />
                     eventually got me into Product management. <br />
                     Building products is crucial to scale the impact we can have in <br />

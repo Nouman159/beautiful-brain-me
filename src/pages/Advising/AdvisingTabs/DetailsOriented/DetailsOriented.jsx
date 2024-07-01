@@ -19,7 +19,7 @@ const DetailsOriented = () => {
             ].map((idea, index) => (
                 <div key={index} className='set-text mb-5'>
                     <div className='text-container'>
-                        <p className='mt-2 text-sm md:text-base lg:text-lg'>{idea.description}</p>
+                        <p className='mt-2 text-lg md:text-base lg:text-xl'>{idea.description}</p>
                     </div>
                     <hr className='my-4' />
                 </div>

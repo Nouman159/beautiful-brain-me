@@ -13,7 +13,7 @@ import Footer from './components/Footer/Footer';
 
 function App() {
   return (
-    <>
+    <div className="font-sans">
       <BrowserRouter>
         <Navbar />
         <Routes>
@@ -26,7 +26,7 @@ function App() {
         </Routes>
         <Footer />
       </BrowserRouter>
-    </>
+    </div>
   );
 }
 

@@ -132,16 +132,16 @@ const CoachingCard = () => {
     };
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen mt-8">
-            <div className="container text-center md:mt-[-220px]">
-                <p className="text-lg mb-8 max-sm:px-4">TESTIMONIALS
+        <div className="flex flex-col items-center justify-center max-sm:py-8 min-h-screen mt-8 border-b-2 border-black">
+            <div className="container text-center md:mt-[-170px]">
+                <p className="text-xl mb-8 max-sm:px-4">TESTIMONIALS
                 </p>
-                <h2 className="text-[48px] font-bold mb-4 max-sm:ml-2 text-center">See what past clients have to say about me</h2>
+                <h2 className="text-[40px] font-bold mb-4 max-sm:ml-2 text-center">See what past clients have to say about me</h2>
             </div>
             <div className="relative w-full max-w-8xl flex justify-center items-center">
                 <button
                     onClick={prevCard}
-                    className="absolute left-0 px-5 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white p-4 rounded-full z-10 ml-28 max-sm:ml-5"
+                    className="absolute left-0 px-5 top-1/2 transform -translate-y-1/2 bg-[#5FBBE7] text-white p-4 rounded-full z-10 ml-28 max-sm:ml-2"
                 >
                     &lt;
                 </button>
@@ -152,10 +152,12 @@ const CoachingCard = () => {
                             className="w-80 m-2 mx-6 max-sm:w-3/4"
                             style={{ marginLeft: index === 0 ? '1rem' : '', marginRight: index === 2 ? '1rem' : '' }}
                         >
-                            <div className="rounded-lg max-sm:w-[120%] max-sm:mr-80 overflow-hidden shadow-lg relative h-auto bg-[#F1FAFF] flex flex-col justify-between">
+                            <div className="rounded-lg max-sm:w-[110%] max-sm:pl-8 py-8 px-4 max-sm:mr-80 overflow-hidden shadow-lg relative h-auto bg-[#F1FAFF] flex flex-col justify-between">
+                                <img src='https://assets-global.website-files.com/62c4588dcf3dfb7ed3818e78/639b4baba4e13f9cac47f0e3_quotation-marks%20(2)%202.svg'
+                                    alt="" className='w-12 relative top-[-36px] left-28' />
                                 <div className="p-4 flex-1 flex flex-col justify-center items-center">
                                     <p className="text-black mb-4">{card.description}</p>
-                                    <h3 className="text-xl text-black font-semibold mb-2">{card.name}</h3>
+                                    <h3 className="text-xl text-black font-semibold mb-2 ml-36">{card.name}</h3>
                                 </div>
                             </div>
                         </div>
@@ -164,7 +166,7 @@ const CoachingCard = () => {
 
                 <button
                     onClick={nextCard}
-                    className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-500 px-5 text-white p-4 rounded-full z-10 mr-28 max-sm:mr-5"
+                    className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-[#5FBBE7] px-5 text-white p-4 rounded-full z-10 mr-28 max-sm:mr-2"
                 >
                     &gt;
                 </button>

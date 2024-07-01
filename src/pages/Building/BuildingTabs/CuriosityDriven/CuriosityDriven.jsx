@@ -18,9 +18,8 @@ const CuriosityDriven = () => {
     return (
         <div className='main p-5 w-11/12 mx-auto'>
             <div>
-                <p className='text-lg md:text-xl lg:text-2xl'>These are ideas that will help motivate others to discover their best selves. The ideas are trying to increase the chances that people will discover their passion and work on themselves.</p>
+                <p className='text-lg md:text-xl lg:text-xl text-gray-800'>These are ideas that will help motivate others to discover their best selves. The ideas are trying to increase the chances that people will discover their passion and work on themselves.</p>
             </div>
-            <hr className='my-4' />
 
             {[
                 {
@@ -41,19 +40,19 @@ const CuriosityDriven = () => {
                 },
             ].map((idea, index) => (
                 <div key={index} className='set-text mb-5'>
+                    <hr className='my-4' />
                     <div className='text-container'>
-                        <h1 className='text-lg md:text-xl lg:text-2xl font-bold'>{idea.title}</h1>
-                        <p className='mt-2 text-sm md:text-base lg:text-lg'>{idea.description}</p>
+                        <h1 className='text-3xl md:text-xl lg:text-3xl py-4 font-bold'>{idea.title}</h1>
+                        <p className='mt-2 text-xl text-gray-700 md:text-base lg:text-lg'>{idea.description}</p>
                     </div>
-                    <div className='flex items-center'>
+                    <span className='flex items-center w-[80px] py-6 rounded-full pl-4 bg-[#E59F41] mt-4'>
                         <FontAwesomeIcon
                             icon={faThumbsUp}
                             onClick={() => toggleLike(index)}
-                            className={`cursor-pointer size-8 ${liked[index] ? 'text-blue-500' : 'text-gray-400'} mr-2`}
+                            className={`cursor-pointer size-8 ${liked[index] ? 'text-gray-500' : 'text-white'} mr-2`}
                         />
-                        <span>{likes[index]}</span>
-                    </div>
-                    <hr className='my-4' />
+                        <span className='mt-1'>{likes[index]}</span>
+                    </span>
                 </div>
             ))}
         </div>

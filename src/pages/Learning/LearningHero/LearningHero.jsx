@@ -3,7 +3,7 @@ import React from 'react';
 const LearningHero = () => {
     return (
         <div className="flex flex-col md:flex-row items-start mt-12 max-sm:mt-0 p-4 md:p-0 mb-8">
-            <div className="md:w-1/2 md:pr-8 ml-16">
+            <div className="md:w-1/2 md:pr-8 ml-16 max-sm:ml-8">
                 <h1 className="text-6xl md:text-8xl font-bold mt-12 md:mt-0">
                     Learning <br /> is a lifelong <br /> process
                 </h1>

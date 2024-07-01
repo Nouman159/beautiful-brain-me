@@ -54,20 +54,20 @@ const AdvisingCards = () => {
     };
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-[#FFF1DF]">
+        <div className="flex flex-col items-center justify-center min-h-screen bg-[#FFF1DF] pb-12 border-b-2 border-black">
             {/* <div className="flex justify-center items-center py-20 bg-[#FFF1DF]"> */}
             <div className="container text-center">
                 <h2 className="text-[48px] font-bold mb-4 max-sm:ml-2 text-center">Portfolio of Projects                </h2>
                 <p className="text-lg mb-8 max-sm:px-4">Schedule a complimentary 30 min call to talk about your project.</p>
                 <a href='https://calendly.com/jose_miguel_santos/advisor-discovery-call-beautiful-brain' target='_blank'>
-                    <button className="bg-[#E59F41] hover:text-black text-white font-bold py-4 px-6 rounded-full transition duration-300 mb-4">SCHEDULE A CALL</button>
+                    <button className="bg-[#DB504C] hover:text-black text-white font-bold py-5 px-7 rounded-full transition duration-300 mb-4">SCHEDULE A CALL</button>
                 </a>
             </div>
             {/* </div> */}
             <div className="relative w-full max-w-8xl flex justify-center items-center">
                 <button
                     onClick={prevCard}
-                    className="absolute left-0 px-5 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white p-4 rounded-full z-10 ml-28 max-sm:ml-5"
+                    className="absolute left-0 px-5 top-1/2 transform -translate-y-1/2 bg-[#DB504C] text-white p-4 rounded-full z-10 ml-28 max-sm:ml-5"
                 >
                     &lt;
                 </button>
@@ -92,7 +92,7 @@ const AdvisingCards = () => {
 
                 <button
                     onClick={nextCard}
-                    className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-500 px-5 text-white p-4 rounded-full z-10 mr-28 max-sm:mr-5"
+                    className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-[#DB504C] px-5 text-white p-4 rounded-full z-10 mr-28 max-sm:mr-5"
                 >
                     &gt;
                 </button>
