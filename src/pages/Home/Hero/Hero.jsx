@@ -1,6 +1,9 @@
 import React from 'react'
 
 const Hero = () => {
+    const scrollToComponent = () => {
+        document.getElementById('knowledge-hub').scrollIntoView({ behavior: 'smooth' });
+    };
     return (
         <div className="container mx-auto flex flex-col md:flex-row items-center p-4 md:mt-16">
             <div className="left-side md:w-1/2 flex flex-col justify-center items-start p-8">
@@ -11,7 +14,7 @@ const Hero = () => {
                         best life
                     </span>
                 </h1>
-                <button className="learn-more-btn bg-blue-500 text-white text-lg px-8 py-3 rounded-full hover:bg-blue-600">
+                <button onClick={scrollToComponent} className="learn-more-btn bg-blue-500 text-white text-lg px-8 py-3 rounded-full hover:bg-blue-600">
                     Learn More
                 </button>
             </div>

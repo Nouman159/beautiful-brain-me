@@ -1,6 +1,9 @@
 import React from 'react';
 
 const LearningHero = () => {
+    const scrollToComponent = () => {
+        document.getElementById('subscribe').scrollIntoView({ behavior: 'smooth' });
+    };
     return (
         <div className="flex flex-col md:flex-row items-start mt-12 max-sm:mt-0 p-4 md:p-0 mb-8">
             <div className="md:w-1/2 md:pr-8 ml-16 max-sm:ml-8">
@@ -13,7 +16,7 @@ const LearningHero = () => {
                     I share what and how I am learning and write my thoughts to help <br />
                     develop my thinking.
                 </p>
-                <button className="bg-green-500 text-white text-2xl rounded-full mt-4 py-4 px-8">
+                <button onClick={scrollToComponent} className="bg-green-500 text-white text-2xl rounded-full mt-4 py-4 px-8">
                     SUBSCRIBE
                 </button>
             </div>

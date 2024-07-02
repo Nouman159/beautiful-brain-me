@@ -14,7 +14,7 @@ const NewsletterSignup = () => {
     };
 
     return (
-        <div className="flex flex-col md:flex-row mt-20 px-4 md:px-20 py-10 justify-between">
+        <div className="flex flex-col md:flex-row mt-20 px-4 md:px-20 py-10 justify-between" id='subscribe'>
             {/* Left Section */}
             <div className="md:w-1/3 py-10">
                 <h1 className="text-4xl font-bold">Did anything spark your interest?</h1>

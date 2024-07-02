@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const KnowledgeHub = () => {
     return (
-        <div className="bg-[#F0F7FE] font-sans text-center p-4 mt-12 md:mt-20">
+        <div className="bg-[#F0F7FE] font-sans text-center p-4 mt-12 md:mt-20" id='knowledge-hub'>
             <h3 className="mt-12 text-2xl font-semibold">WHAT DO WE DO?</h3>
             <h2 className="text-4xl font-bold mt-5 max-sm:text-left">Through knowledge sharing, coaching, and <br />advice, Beautiful Brain allows you to:</h2>
 

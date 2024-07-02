@@ -1,6 +1,9 @@
 import React from "react";
 
 const AboutHero = () => {
+    const scrollToComponent = () => {
+        document.getElementById('my-story-section').scrollIntoView({ behavior: 'smooth' });
+    };
     return (
         <div className="flex flex-col lg:flex-row justify-between items-center p-10 max-w-screen-xl mx-auto bg-white rounded-lg md:mt-8">
             <div className="lg:flex-1 p-5 text-center lg:text-left">
@@ -15,7 +18,7 @@ const AboutHero = () => {
                     <br />
                     I have worked in tech and product management for the past 10 years and started a new journey as independent in 2022.
                 </p>
-                <button className="px-7 py-5 text-lg max-sm:ml-[-20px] bg-blue-600 text-white rounded-full shadow-md transition-colors">
+                <button onClick={scrollToComponent} className="px-7 py-5 text-lg max-sm:ml-[-20px] bg-blue-600 text-white rounded-full shadow-md transition-colors">
                     Read My Story
                 </button>
             </div>

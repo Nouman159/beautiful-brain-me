@@ -2,7 +2,7 @@ import React from 'react';
 
 const MyStory = () => {
     return (
-        <div className="text-center mt-12 md:mt-0 px-4 md:px-0 bg-[#F0F7FE] py-16">
+        <div className="text-center mt-12 md:mt-0 px-4 md:px-0 bg-[#F0F7FE] py-16" id='my-story-section'>
             <h3 className="text-2xl">MY STORY</h3>
             <h2 className="text-4xl md:text-5xl my-4">
                 For the past eleven years, my wife has called <br className="hidden md:inline" /> me the "Beautiful Brain."
